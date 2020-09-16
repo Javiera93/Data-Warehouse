@@ -59,7 +59,7 @@ songplay_table_create = ("""
 CREATE TABLE songsplay(
     songplay_id INTEGER IDENTITY(1,1) PRIMARY KEY,
     start_time TIMESTAMP,
-    user_id INTEGER,
+    user_id INTEGER NOT NULL,
     level VARCHAR(10),
     song_id VARCHAR(40),
     artist_id VARCHAR(50),
